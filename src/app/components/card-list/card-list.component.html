@@ -1,0 +1,11 @@
+<div class="card-container">
+  <mat-card *ngFor="let card of cards" class="card">
+    <mat-card-title>{{ card.title }}</mat-card-title>
+    <mat-card-content>
+      <p>{{ card.description }}</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="primary" (click)="editCard(card)">Edit</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
